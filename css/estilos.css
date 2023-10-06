@@ -9,6 +9,9 @@ header{
     color: white;
     background-color: transparent;
 }
+.btns:hover{
+    color: orangered;
+}
 #logo{
     height: 70px;
 }
@@ -16,14 +19,20 @@ main{
     padding: 1rem;
     background-color: peachpuff;
 }
+.card{
+    width: 25%;
+}
 /** Productos Estrella **/
 .starProd{
     width: 45%;
+    border-top: 1px dotted black;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
 }
 .prodFrame{
-    width: 250px;
-    height: 250px;
-    border: white solid .5rem;
+    width: 200px;
+    height: 200px;
+    border: white solid 0.37rem;
     border-radius: 150px;
     padding: .5rem;
 }
@@ -33,14 +42,14 @@ main{
     border: whitesmoke solid .3rem;
     border-radius: 150px;
     background: whitesmoke url("../img/star/uno.png") no-repeat center center;
-    background-size: 70%;
+    background-size: 80%;
 }
 .prodDetails{
     max-width: 60%;
     height: 200px;
     padding: 1rem;
 }
-.prodDetails h4{
+.prodDetails h3{
     color: gray;
     background-color: aliceblue;
     border-radius: .3rem;
@@ -64,43 +73,50 @@ footer{
     color: gray;
     border: none;
     size: 60px;
-    padding: 10px;
+    padding: 0px;
     margin-left: 5px;
 }
 .h3_cat{
     padding: 2rem 2rem;
-    background-color: rgb(255, 179, 179);
+    background-color: rgba(255, 179, 179, 0.425);
     margin: 1rem 0;
 }
 /** Resposive **/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .starProd{
         width: 43%;
-    }    
+    }
+    .card{
+        width: 25%;
+        margin: 0.2px;
+    }
 }
-@media screen and (min-width: 321px) and (max-width: 767xp) {
+@media screen and (max-width: 767px) {
     header h1 {
         display: none;
-        visibility: hidden;
     }
     .btns{
-        color: white;
+        color: gainsboro;
         size: 30px;
         margin-right: .5rem;
     }
     .card {
-        width: 43%;
-        margin: 1rem;
+        width: 40%;
+        margin: 2rem;
     }
 }
 @media screen and (max-width: 320px) {
     .btns{
-        color: white;
+        color: gainsboro;
         size: 30px;
         margin-right: .25rem;
     }
     #logo{
         height: 45px;
+    }
+    .card{
+        width: 100%;
+        margin: 0;
     }
     .card img{
         width: 100%;
@@ -109,17 +125,29 @@ footer{
     .card a {
         display: none;
     }
+    .starProds{
+        width: 100%;
+        align-items: center;
+    }
     .starProd{
         width: 100%;
         flex-wrap: wrap;
         padding: 0;
-        margin: 0;
         -ms-flex-align: center;
+        justify-content: center;
     }
     .prodDetails{
+        margin: 0.5rem 0;
         padding: 0;
+        width: 100%;
+        height: auto;
     }
     .prodDetails h3{
-        font-size: 2rem;
+        font-size: 1rem;
+        margin: 0;
+    }
+    .prodDetails button{
+        width: 100%;
+        height: 75px;
     }
 }

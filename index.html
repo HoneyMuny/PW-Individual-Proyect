@@ -18,7 +18,8 @@
                 <img src="img/basketball-svgrepo-com.svg" id="logo" onmouseover="">
                 <h1>Tienda Online</h1>
             </div>
-            <nav class="material-symbols-outlined">
+            <div id="navBar" class="d-flex align-items-end">
+              <nav class="material-symbols-outlined">
                 <button id="btn1" class="btns"> 
                     search
                 </button>
@@ -30,10 +31,10 @@
                 </button>
             </nav>
         </header>
-        <button onclick="document.getElementById('loginForm').style.display='inline-block'">Login</button>
+        
 
         <div id="loginForm" class="modal">
-          <span onclick="document.getElementById('id01').style.display='none'"
+          <span onclick="document.getElementById('loginForm').style.display='none'"
           class="close" title="Close Modal">&times;
         </span>
           
@@ -49,24 +50,23 @@
               <label for="psw"><b>Password</b></label> 
               <input type="password" placeholder="Enter Password" name="psw" required> 
               
-              <button type="submit">Login</button> 
+              <button type="submit" class="buttonLogin">Login</button> 
             <label> 
               <input type="checkbox" checked="checked" name="remember"> Remember me 
             </label> 
           </div> 
         </div>
          
-          <div class="container" style="background-color:#f1f1f1"> 
-            <button type="button" class="cancelbtn">Cancel</button> 
-            <span class="psw">Forgot <a href="#">password?</a></span> 
-          </div> 
+          
         </form>
         <div id="dark" class="dark">
-          <div id="searchBar" class="searchBar" style="z-index: 999999; display: none;" >
+          <div id="searchBar" class="searchBar" style="z-index: 9999; display: none;" >
             <form class="d-flex">
-              <input class="form-control" type="text" placeholder="Search...">
+              <input class="modal-content" type="text" placeholder="Search...">
               <nav class="material-symbols-outlined">
-                <button class="btns">search</button>
+                <button id="searchmodal" class="btns">
+                  search
+                </button>
               </nav>
             </form>
           </div>

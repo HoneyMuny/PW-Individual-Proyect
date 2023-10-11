@@ -19,7 +19,7 @@
                 <h1>Tienda Online</h1>
             </div>
             <nav class="material-symbols-outlined">
-                <button id="btn1" class="btns">
+                <button id="btn1" class="btns"> 
                     search
                 </button>
                 <button id="btn2" class="btns">
@@ -30,7 +30,37 @@
                 </button>
             </nav>
         </header>
-        
+        <button onclick="document.getElementById('loginForm').style.display='inline-block'">Login</button>
+
+        <div id="loginForm" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'"
+          class="close" title="Close Modal">&times;
+        </span>
+          
+          <form class="modal-content animate" action="action_page.php" method="post"> 
+            <div class="imgcontainer"> 
+              <img src="img/logo.jpg" alt="Avatar" class="avatar"> 
+            </div> 
+            
+            <div class="container"> 
+              <label for="uname"><b>Username</b></label> 
+              <input type="text" placeholder="Enter Username" name="uname" required> 
+              
+              <label for="psw"><b>Password</b></label> 
+              <input type="password" placeholder="Enter Password" name="psw" required> 
+              
+              <button type="submit">Login</button> 
+            <label> 
+              <input type="checkbox" checked="checked" name="remember"> Remember me 
+            </label> 
+          </div> 
+        </div>
+         
+          <div class="container" style="background-color:#f1f1f1"> 
+            <button type="button" class="cancelbtn">Cancel</button> 
+            <span class="psw">Forgot <a href="#">password?</a></span> 
+          </div> 
+        </form>
         <div id="dark" class="dark">
           <div id="searchBar" class="searchBar" style="z-index: 999999; display: none;" >
             <form class="d-flex">

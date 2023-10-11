@@ -61,7 +61,7 @@ btn2.addEventListener("mouseover", function() { mouseOver(btn2) });
 btn2.addEventListener("mousedown", function() { mouseDown(btn2) });
 btn2.addEventListener("mouseup", function() { mouseUp(btn2) });
 btn2.addEventListener("mouseout", function() { mouseOut(btn2) });
-
+btn2.addEventListener("click", function() { document.getElementById('loginForm').style.display='inline-block'; });
 btn3.addEventListener("mouseover", function() { mouseOver(btn3) });
 btn3.addEventListener("mousedown", function() { mouseDown(btn3) });
 btn3.addEventListener("mouseup", function() { mouseUp(btn3) });

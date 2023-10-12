@@ -22,7 +22,7 @@
                 <button id="btn1" class="btns">
                     search
                 </button>
-                <button id="btn2" class="btns">
+                <button id="btn2" class="btns" onclick="document.getElementById('id01').style.display='block'">
                     person
                 </button>
                 <button id="btn3" class="btns">
@@ -30,6 +30,48 @@
                 </button>
             </nav>
         </header>
+        <!--- Barra de busqueda --->
+        <div id="oscuro" class="content">
+          <div id="searchBar" class="searchBar">
+            <form class="d-flex">
+              <input class="form-control" type="text" placeholder="Escribe lo que deseas buscar">
+              <button class="btns material-symbols-outlined">
+                search
+                </button>
+            </form>
+          </div>
+        </div>
+        <!--- Barra de busqueda Fin--->
+        <!--- Formulario de Login --->
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+        <form class="modal-content animate" action="/action_page.php">
+          <div class="imgcontainer">
+            <img src="img\img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+        
+          <div class="container">
+            <label for="uname"><b>Usuario</b></label>
+            <input type="text" placeholder="Ingrese su nombre de usuario" name="uname" required>
+        
+            <label for="psw"><b>Contraseña</b></label>
+            <input type="password" placeholder="Ingrese su contraseña" name="psw" required>
+        
+            <button class="btnslogin" type="submit">Ingresar</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Recuérdame
+            </label>
+          </div>
+        
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn btnslogin">Cancelar</button>
+            <span class="psw">¿Olvidaste tu <a href="#">contraseña?</a></span>
+          </div>
+        </form>
+        </div>
+        <!--- Formulario de Login Fin--->
         <main>
             <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">

@@ -1,299 +1,299 @@
 header{
-    background-color: papayawhip;
-    width: 100%;
-    height: 50px;
+  background-color: papayawhip;
+  width: 100%;
+  height: 50px;
 }
 #menu{
-    font-size: 28pt;
-    /*font-weight: bold;*/
-    color: white;
-    background-color: transparent;
+  font-size: 28pt;
+  /*font-weight: bold;*/
+  color: white;
+  background-color: transparent;
 }
 .btns:hover{
-    color: orangered;
+  color: orangered;
 }
 #logo{
-    height: 70px;
+  height: 70px;
 }
 main{
-    padding: 1rem;
-    background-color: peachpuff;
+  padding: 1rem;
+  background-color: peachpuff;
 }
 .card{
-    width: 25%;
+  width: 25%;
 }
 /** search bar **/
 #oscuro{
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #333333d6;
-    z-index: 999;
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333333d6;
+  z-index: 999;
 }
 .searchBar{
-    border: 1px solid #666;
-    border-radius: 0.7rem;
-    width: 35%;
-    position: absolute;
-    right: 10px;
+  border: 1px solid #666;
+  border-radius: 0.7rem;
+  width: 35%;
+  position: absolute;
+  right: 10px;
 }
 /** Float login **/
 /* Bordered form */
 form {
-    border: 3px solid #f1f1f1;
-  }
-  
-  /* Full-width inputs */
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-  /* Set a style for all buttons */
-  .btnslogin {
-    background-color: #04AA6D;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  /* Add a hover effect for buttons */
-  .btnslogin:hover {
-    opacity: 0.8;
-  }
-  
-  /* Extra style for the cancel button (red) */
-  .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-  }
-  
-  /* Center the avatar image inside this container */
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-  }
-  
-  /* Avatar image */
-  img.avatar {
-    width: 40%;
-    border-radius: 50%;
-  }
-  
-  /* Add padding to containers */
-  .container {
-    padding: 16px;
-  }
-  
-  /* The "Forgot password" text */
-  span.psw {
-    float: right;
-    padding-top: 16px;
-  }
-  /* Change styles for span and cancel button on extra small screens */
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.btnslogin {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+.btnslogin:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+/* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
-    span.psw {
-      display: block;
-      float: none;
-    }
-    .cancelbtn {
-      width: 100%;
-    }
+  span.psw {
+    display: block;
+    float: none;
   }
-  /* The Modal (background) */
+  .cancelbtn {
+    width: 100%;
+  }
+}
+/* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 4; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 5px auto; /* 15% from the top and centered */
-    border: 1px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
-    /* Position it in the top right corner outside of the modal */
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  /* Close button on hover */
-  .close:hover,
-  .close:focus {
-    color: red;
-    cursor: pointer;
-  }
-  
-  /* Add Zoom Animation */
-  .animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-  }
-  
-  @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
-  }
-  
-  @keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
-  }
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 4; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
 
 /** Productos Estrella **/
 .starProd{
-    width: 45%;
-    border-top: 1px dotted black;
-    padding-top: 1rem;
-    margin-bottom: 1rem;
+  width: 45%;
+  border-top: 1px dotted black;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 .prodFrame{
-    width: 200px;
-    height: 200px;
-    border: white solid 0.37rem;
-    border-radius: 150px;
-    padding: .5rem;
+  width: 200px;
+  height: 200px;
+  border: white solid 0.37rem;
+  border-radius: 150px;
+  padding: .5rem;
 }
 .imgProdStar{
-    width: 100%;
-    height: 100%;
-    border: whitesmoke solid .3rem;
-    border-radius: 150px;
-    background: whitesmoke url("../img/star/uno.png") no-repeat center center;
-    background-size: 80%;
+  width: 100%;
+  height: 100%;
+  border: whitesmoke solid .3rem;
+  border-radius: 150px;
+  background: whitesmoke url("../img/star/uno.png") no-repeat center center;
+  background-size: 80%;
 }
 .prodDetails{
-    max-width: 60%;
-    height: 200px;
-    padding: 1rem;
+  max-width: 60%;
+  height: 200px;
+  padding: 1rem;
 }
 .prodDetails h3{
-    color: gray;
-    background-color: aliceblue;
-    border-radius: .3rem;
-    padding: .7rem;
-    text-shadow: peachpuff .1rem .1rem 0rem,
-    peachpuff -.1rem .1rem 0rem,
-    peachpuff .1rem -.1rem 0rem,
-    peachpuff -.1rem -.1rem 0rem;
+  color: gray;
+  background-color: aliceblue;
+  border-radius: .3rem;
+  padding: .7rem;
+  text-shadow: peachpuff .1rem .1rem 0rem,
+  peachpuff -.1rem .1rem 0rem,
+  peachpuff .1rem -.1rem 0rem,
+  peachpuff -.1rem -.1rem 0rem;
 }
 .prodDetails p{
-    font-size: 1.5rem;
-    font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 /** Footer **/
 footer{
-    background-color: gray;
-    height: 100px;
+  background-color: gray;
+  height: 100px;
 }
 .btns{
-    background-color: transparent;
-    color: gray;
-    border: none;
-    size: 60px;
-    padding: 0px;
-    margin-left: 5px;
-    margin-right: 5px;
+  background-color: transparent;
+  color: gray;
+  border: none;
+  size: 60px;
+  padding: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .h3_cat{
-    padding: 2rem 2rem;
-    background-color: rgba(255, 179, 179, 0.425);
-    margin: 1rem 0;
+  padding: 2rem 2rem;
+  background-color: rgba(255, 179, 179, 0.425);
+  margin: 1rem 0;
 }
 /** Resposive **/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .starProd{
-        width: 43%;
-    }
-    .card{
-        width: 25%;
-        margin: 0.2px;
-    }
+  .starProd{
+      width: 43%;
+  }
+  .card{
+      width: 25%;
+      margin: 0.2px;
+  }
 }
 @media screen and (max-width: 767px) {
-    header h1 {
-        display: none;
-    }
-    .btns{
-        color: gainsboro;
-        size: 30px;
-        padding: 0;
-        margin-right: .5rem;
-    }
-    .card {
-        width: 40%;
-        margin: 2rem;
-    }
+  header h1 {
+      display: none;
+  }
+  .btns{
+      color: gainsboro;
+      size: 30px;
+      padding: 0;
+      margin-right: .5rem;
+  }
+  .card {
+      width: 40%;
+      margin: 2rem;
+  }
 }
 @media screen and (max-width: 320px) {
-    .btns{
-        color: gainsboro;
-        size: 30px;
-        margin-right: .25rem;
-    }
-    #logo{
-        height: 45px;
-    }
-    .card{
-        width: 100%;
-        margin: 0;
-    }
-    .card img{
-        width: 100%;
-        margin: 0;
-    }
-    .card a {
-        display: none;
-    }
-    .starProds{
-        width: 100%;
-        align-items: center;
-    }
-    .starProd{
-        width: 100%;
-        flex-wrap: wrap;
-        padding: 0;
-        -ms-flex-align: center;
-        justify-content: center;
-    }
-    .prodDetails{
-        margin: 0.5rem 0;
-        padding: 0;
-        width: 100%;
-        height: auto;
-    }
-    .prodDetails h3{
-        font-size: 1rem;
-        margin: 0;
-    }
-    .prodDetails button{
-        width: 100%;
-        height: 75px;
-    }
+  .btns{
+      color: gainsboro;
+      size: 30px;
+      margin-right: .25rem;
+  }
+  #logo{
+      height: 45px;
+  }
+  .card{
+      width: 100%;
+      margin: 0;
+  }
+  .card img{
+      width: 100%;
+      margin: 0;
+  }
+  .card a {
+      display: none;
+  }
+  .starProds{
+      width: 100%;
+      align-items: center;
+  }
+  .starProd{
+      width: 100%;
+      flex-wrap: wrap;
+      padding: 0;
+      -ms-flex-align: center;
+      justify-content: center;
+  }
+  .prodDetails{
+      margin: 0.5rem 0;
+      padding: 0;
+      width: 100%;
+      height: auto;
+  }
+  .prodDetails h3{
+      font-size: 1rem;
+      margin: 0;
+  }
+  .prodDetails button{
+      width: 100%;
+      height: 75px;
+  }
 }
